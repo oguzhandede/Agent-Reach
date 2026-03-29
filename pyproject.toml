@@ -40,7 +40,15 @@ dependencies = [
 [project.optional-dependencies]
 browser = ["playwright>=1.40"]
 cookies = ["browser-cookie3>=0.19"]
-all = ["playwright>=1.40", "mcp[cli]>=1.0", "browser-cookie3>=0.19"]
+ui = ["fastapi>=0.115", "uvicorn>=0.30", "python-multipart>=0.0.9"]
+all = [
+    "playwright>=1.40",
+    "mcp[cli]>=1.0",
+    "browser-cookie3>=0.19",
+    "fastapi>=0.115",
+    "uvicorn>=0.30",
+    "python-multipart>=0.0.9",
+]
 dev = [
     "pytest>=8.0",
     "ruff>=0.8",
@@ -51,6 +59,7 @@ dev = [
 
 [project.scripts]
 agent-reach = "agent_reach.cli:main"
+agent-reach-ui = "agent_reach.web.main:cli_main"
 
 [project.urls]
 Homepage = "https://github.com/Panniantong/agent-reach"

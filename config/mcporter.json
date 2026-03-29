@@ -5,6 +5,9 @@
     },
     "xiaohongshu": {
       "baseUrl": "http://localhost:18060/mcp"
+    },
+    "weibo": {
+      "command": "mcp-server-weibo"
     }
   },
   "imports": []
